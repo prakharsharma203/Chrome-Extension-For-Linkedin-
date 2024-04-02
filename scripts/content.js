@@ -1,6 +1,6 @@
 let ulHeader = document.querySelector("ul.global-nav__primary-items");
 
-let liViewPosts = document.createElement ("li");
+let liViewPosts = document.createElement("li");
 liViewPosts.classList.add("global-nav__primary-item");
 
 let aViewPosts = document.createElement ("a");
@@ -24,7 +24,7 @@ divOuter.appendChild(divInner);
 aViewPosts.appendChild(divOuter);
 
 let spanViewPosts = document.createElement("span")
-spanViewPosts.classList.add("t-12", "break-words", "block", "t-black—-light", "t-normalglobal-nav__primary-link-text");
+spanViewPosts.classList.add("t-12", "break-words", "block", "t-black—-light", "t-normal","global-nav__primary-link-text");
 spanViewPosts.innerHTML = "Saved";
 
 aViewPosts.appendChild(spanViewPosts);
@@ -44,6 +44,7 @@ const speechRecognition = new webkitSpeechRecognition();
 speechRecognition.continuous = true;
 speechRecognition.lang = "en-in";
 speechRecognition.start();
+
 
 speechRecognition.onresult = (event) => {
     let transcript = event.results[event.resultIndex][0].transcript;
