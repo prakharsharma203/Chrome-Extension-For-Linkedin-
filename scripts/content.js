@@ -21,6 +21,10 @@ let messaging = document.createElement("a");
 messaging.setAttribute("target","_blank");
 messaging.setAttribute("href", "https://www.linkedin.com/messaging/thread/2-OTMwYzcwOTEtNmUxZi00ZTgyLThhNTYtMzU4NzE5MjAwMGE1XzAxMw==/");
 
+let notifications = document.createElement("a");
+notifications.setAttribute("target","_blank");
+notifications.setAttribute("href","https://www.linkedin.com/notifications/?=");
+
 let divOuter = document.createElement("div");
 divOuter.classList.add("ivm-image-view-model", "global-nav__icon-ivm");
 
@@ -71,6 +75,8 @@ speechRecognition.onresult = (event) => {
         jobs.click();
     }else if(transcript.trim().toLowerCase().includes("open messaging")){
         messaging.click();
+    }else if(transcript.trim().toLowerCase().includes("open notifications")){
+        notifications.click();
     }
 }
 
