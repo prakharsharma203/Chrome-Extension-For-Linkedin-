@@ -24,6 +24,12 @@ The LinkedIn Voice Assistant Chrome Extension is a tool designed to enhance your
 - `Open jobs`: Opens job listings on LinkedIn.
 - `Open message`: Opens your LinkedIn messages.
 - `Open notification`: Opens your LinkedIn notifications.
+  
+## Accessing Saved Posts
+
+To access your saved posts on LinkedIn using the extension:
+1. Click on the "Saved" icon located near the Business option on the LinkedIn navigation bar.
+2. Alternatively, issue the voice command: `Open saved posts`.
 
 ## Installation
 
