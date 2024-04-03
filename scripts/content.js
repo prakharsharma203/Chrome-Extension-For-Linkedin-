@@ -9,6 +9,10 @@ aViewPosts.setAttribute("target","_blank");
 aViewPosts.setAttribute("href", "https://www.linkedin.com/my-items/saved-posts/");
 aViewPosts.classList.add("app-aware-link","global-nav__primary-link");
 
+let network = document.createElement("a");
+network.setAttribute("target","_blank");
+network.setAttribute("href", "https://www.linkedin.com/mynetwork/?=");
+
 let divOuter = document.createElement("div");
 divOuter.classList.add("ivm-image-view-model", "global-nav__icon-ivm");
 
@@ -53,6 +57,8 @@ speechRecognition.onresult = (event) => {
 
     if(transcript.trim().toLowerCase().includes("open post")){
         aViewPosts.click();
+    }else if(transcript.trim().toLowerCase().includes("open my network")){
+        network.click();
     }
 }
 
