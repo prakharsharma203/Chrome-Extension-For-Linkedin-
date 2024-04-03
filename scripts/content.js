@@ -73,9 +73,9 @@ speechRecognition.onresult = (event) => {
         network.click();
     }else if(transcript.trim().toLowerCase().includes("open jobs")){
         jobs.click();
-    }else if(transcript.trim().toLowerCase().includes("open messaging")){
+    }else if(transcript.trim().toLowerCase().includes("open message")){
         messaging.click();
-    }else if(transcript.trim().toLowerCase().includes("open notifications")){
+    }else if(transcript.trim().toLowerCase().includes("open notification")){
         notifications.click();
     }
 }
