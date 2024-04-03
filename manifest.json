@@ -24,7 +24,7 @@
             ]
         }
     ],
-    "web_accessible_resources" : [{
+    "web_accessible_resources" :[{
         "resources" : ["images/save-icon.png"],
         "matches" : ["https://www.linkedin.com/*"]
     }]

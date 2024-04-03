@@ -13,6 +13,11 @@ let network = document.createElement("a");
 network.setAttribute("target","_blank");
 network.setAttribute("href", "https://www.linkedin.com/mynetwork/?=");
 
+let jobs = document.createElement("a");
+jobs.setAttribute("target","_blank");
+jobs.setAttribute("href", "https://www.linkedin.com/jobs/?=");
+
+
 let divOuter = document.createElement("div");
 divOuter.classList.add("ivm-image-view-model", "global-nav__icon-ivm");
 
@@ -59,6 +64,8 @@ speechRecognition.onresult = (event) => {
         aViewPosts.click();
     }else if(transcript.trim().toLowerCase().includes("open my network")){
         network.click();
+    }else if(transcript.trim().toLowerCase().includes("open jobs")){
+        jobs.click();
     }
 }
 
