@@ -31,6 +31,11 @@ To access your saved posts on LinkedIn using the extension:
 1. Click on the "Saved" icon located near the Business option on the LinkedIn navigation bar.
 2. Alternatively, issue the voice command: `Open saved posts`.
 
+## Pop-up Feature
+
+When you click on the extension icon, a pop-up window will appear, allowing you to:
+- Learn about the extension and its functionalities.
+
 ## Installation
 
 1. Clone this repository or download and extract the ZIP file.
